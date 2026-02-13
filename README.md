@@ -59,7 +59,9 @@ O projeto utiliza algoritmos avançados de regressão. Abaixo estão as formula�
 ### 1. Gradient Boosting (Melhor Modelo)
 O Gradient Boosting constrói um modelo aditivo de forma sequencial, onde cada nova árvore tenta corrigir os erros (resíduos) da anterior.
 
-$$ F_m(x) = F_{m-1}(x) + \gamma_m h_m(x) $$
+$$
+F_m(x) = F_{m-1}(x) + \gamma_m h_m(x)
+$$
 
 Onde:
 *   $F_m(x)$ é a predição na iteração $m$.
@@ -67,12 +69,16 @@ Onde:
 *   $\gamma_m$ é a taxa de aprendizado (learning rate) que controla a contribuição de cada árvore.
 
 A função de perda otimizada é o Erro Quadrático Médio (MSE):
-$$ L(y, F(x)) = \frac{1}{2}(y - F(x))^2 $$
+$$
+L(y, F(x)) = \frac{1}{2}(y - F(x))^2
+$$
 
 ### 2. Random Forest
 O Random Forest é um método de *bagging* que cria múltiplas árvores de decisão independentes e calcula a média de suas predições para reduzir a variância.
 
-$$ \hat{y} = \frac{1}{B} \sum_{b=1}^{B} f_b(x) $$
+$$
+\hat{y} = \frac{1}{B} \sum_{b=1}^{B} f_b(x)
+$$
 
 Onde:
 *   $B$ é o número total de árvores.
@@ -82,10 +88,14 @@ Onde:
 Para validar a performance, utilizamos as seguintes métricas:
 
 **Root Mean Squared Error (RMSE)**:
-$$ RMSE = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2} $$
+$$
+RMSE = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}
+$$
 
 **Coeficiente de Determinação ($R^2$)**:
-$$ R^2 = 1 - \frac{\sum_{i=1}^{n} (y_i - \hat{y}_i)^2}{\sum_{i=1}^{n} (y_i - \bar{y})^2} $$
+$$
+R^2 = 1 - \frac{\sum_{i=1}^{n} (y_i - \hat{y}_i)^2}{\sum_{i=1}^{n} (y_i - \bar{y})^2}
+$$
 
 ## �📂 Estrutura do Projeto
 
