@@ -1,0 +1,107 @@
+2026-02-13 16:41:57,976 INFO Iniciando Pipeline do Modelo de Avaliação de Imóveis
+2026-02-13 16:41:57,988 INFO Dados carregados com features de POI.
+2026-02-13 16:41:57,988 INFO Iniciando limpeza. Shape original: (3500, 21)
+2026-02-13 16:41:58,002 INFO Limpeza concluída. Shape final: (3498, 21)
+2026-02-13 16:41:58,003 INFO Iniciando engenharia de features...
+2026-02-13 16:41:58,013 INFO Engenharia de features concluída. Colunas: ['titulo', 'endereco', 'preco', 'area', 'quartos', 'banheiros', 'vagas', 'bairro', 'latitude', 'longitude', 'dist_escola', 'qtd_escola_500m', 'dist_hospital', 'qtd_hospital_500m', 'dist_parque', 'qtd_parque_500m', 'dist_farmacia', 'qtd_farmacia_500m', 'score_educacao', 'score_lazer', 'score_saude', 'preco_m2', 'log_preco', 'log_area', 'bairro_Centro', 'bairro_Chapada', 'bairro_Contorno', 'bairro_Estrela', 'bairro_Jardim America', 'bairro_Jardim Carvalho', 'bairro_Jardim Sabara', 'bairro_Neves', 'bairro_Nova Russia', 'bairro_Oficinas', 'bairro_Olarias', 'bairro_Orfãs', 'bairro_Ronda', 'bairro_Santa Paula', 'bairro_Santo Antonio', 'bairro_Uvaranas', 'bairro_Vila Estrela']
+2026-02-13 16:42:00,435 INFO Iniciando treinamento de modelos...
+2026-02-13 16:42:00,436 INFO Features selecionadas: ['area', 'quartos', 'banheiros', 'vagas', 'dist_escola', 'qtd_escola_500m', 'dist_hospital', 'qtd_hospital_500m', 'dist_parque', 'qtd_parque_500m', 'dist_farmacia', 'qtd_farmacia_500m', 'score_educacao', 'score_lazer', 'score_saude', 'bairro_Centro', 'bairro_Chapada', 'bairro_Contorno', 'bairro_Estrela', 'bairro_Jardim America', 'bairro_Jardim Carvalho', 'bairro_Jardim Sabara', 'bairro_Neves', 'bairro_Nova Russia', 'bairro_Oficinas', 'bairro_Olarias', 'bairro_Orfãs', 'bairro_Ronda', 'bairro_Santa Paula', 'bairro_Santo Antonio', 'bairro_Uvaranas', 'bairro_Vila Estrela']
+2026-02-13 16:42:00,439 INFO Treinando RandomForest...
+2026-02-13 16:42:02,197 INFO RandomForest - R2: 0.6197, RMSE(log): 0.4066, MAE(real): R$ 59826.27
+2026-02-13 16:42:02,197 INFO Treinando GradientBoosting...
+2026-02-13 16:42:02,899 INFO GradientBoosting - R2: 0.6638, RMSE(log): 0.3823, MAE(real): R$ 57021.06
+2026-02-13 16:42:02,899 INFO Melhor modelo: GradientBoosting com R2: 0.6638
+2026-02-13 16:42:02,903 INFO Modelo salvo em /home/luiztiagow1987/Área de trabalho/ModeloPonta/modelos/melhor_modelo.pkl
+2026-02-13 16:42:03,625 INFO Pipeline finalizado com sucesso!
+2026-02-13 16:53:33,900 INFO Iniciando Pipeline do Modelo de Avaliação de Imóveis
+2026-02-13 16:53:33,920 INFO Dados carregados com features de POI.
+2026-02-13 16:53:33,920 INFO Iniciando limpeza. Shape original: (3500, 21)
+2026-02-13 16:53:33,941 INFO Limpeza concluída. Shape final: (3498, 21)
+2026-02-13 16:53:33,942 INFO Iniciando engenharia de features...
+2026-02-13 16:53:33,961 INFO Engenharia de features concluída. Colunas: ['titulo', 'endereco', 'preco', 'area', 'quartos', 'banheiros', 'vagas', 'bairro', 'latitude', 'longitude', 'dist_escola', 'qtd_escola_500m', 'dist_hospital', 'qtd_hospital_500m', 'dist_parque', 'qtd_parque_500m', 'dist_farmacia', 'qtd_farmacia_500m', 'score_educacao', 'score_lazer', 'score_saude', 'preco_m2', 'log_preco', 'log_area', 'bairro_Centro', 'bairro_Chapada', 'bairro_Contorno', 'bairro_Estrela', 'bairro_Jardim America', 'bairro_Jardim Carvalho', 'bairro_Jardim Sabara', 'bairro_Neves', 'bairro_Nova Russia', 'bairro_Oficinas', 'bairro_Olarias', 'bairro_Orfãs', 'bairro_Ronda', 'bairro_Santa Paula', 'bairro_Santo Antonio', 'bairro_Uvaranas', 'bairro_Vila Estrela']
+2026-02-13 16:53:36,230 WARNING Coluna 'data_coleta' não encontrada. Pulando análise temporal.
+2026-02-13 16:53:38,375 INFO Iniciando treinamento de modelos...
+2026-02-13 16:53:38,376 INFO Features selecionadas (32): ['area', 'quartos', 'banheiros', 'vagas', 'dist_escola', 'qtd_escola_500m', 'dist_hospital', 'qtd_hospital_500m', 'dist_parque', 'qtd_parque_500m', 'dist_farmacia', 'qtd_farmacia_500m', 'score_educacao', 'score_lazer', 'score_saude', 'bairro_Centro', 'bairro_Chapada', 'bairro_Contorno', 'bairro_Estrela', 'bairro_Jardim America', 'bairro_Jardim Carvalho', 'bairro_Jardim Sabara', 'bairro_Neves', 'bairro_Nova Russia', 'bairro_Oficinas', 'bairro_Olarias', 'bairro_Orfãs', 'bairro_Ronda', 'bairro_Santa Paula', 'bairro_Santo Antonio', 'bairro_Uvaranas', 'bairro_Vila Estrela']
+2026-02-13 16:53:38,391 INFO Avaliando RandomForest...
+2026-02-13 16:53:41,187 INFO 
+    === Relatório de Avaliação: RandomForest ===
+    R2 Score: 0.6197 (Quanto maior, melhor)
+    RMSE (Log): 0.4066
+    
+    Métricas na Escala Real (R$):
+    - MAE (Erro Médio Absoluto): R$ 59826.27
+    - RMSE (Erro Quadrático Médio): R$ 88732.04
+    - MAPE (Erro Percentual Médio): 35.21%
+    
+    Interpretação:
+    O modelo erra, em média, 35.21% do valor do imóvel.
+    Para um imóvel de R$ 300.000, o erro médio é de +/- R$ 59826.27.
+    =============================================
+    
+2026-02-13 16:53:41,216 INFO Avaliando GradientBoosting...
+2026-02-13 16:53:42,226 INFO 
+    === Relatório de Avaliação: GradientBoosting ===
+    R2 Score: 0.6638 (Quanto maior, melhor)
+    RMSE (Log): 0.3823
+    
+    Métricas na Escala Real (R$):
+    - MAE (Erro Médio Absoluto): R$ 57021.06
+    - RMSE (Erro Quadrático Médio): R$ 86305.66
+    - MAPE (Erro Percentual Médio): 32.89%
+    
+    Interpretação:
+    O modelo erra, em média, 32.89% do valor do imóvel.
+    Para um imóvel de R$ 300.000, o erro médio é de +/- R$ 57021.06.
+    =============================================
+    
+2026-02-13 16:53:42,229 INFO Avaliando Ridge...
+2026-02-13 16:53:42,236 INFO 
+    === Relatório de Avaliação: Ridge ===
+    R2 Score: 0.6563 (Quanto maior, melhor)
+    RMSE (Log): 0.3865
+    
+    Métricas na Escala Real (R$):
+    - MAE (Erro Médio Absoluto): R$ 58842.18
+    - RMSE (Erro Quadrático Médio): R$ 97900.10
+    - MAPE (Erro Percentual Médio): 33.92%
+    
+    Interpretação:
+    O modelo erra, em média, 33.92% do valor do imóvel.
+    Para um imóvel de R$ 300.000, o erro médio é de +/- R$ 58842.18.
+    =============================================
+    
+2026-02-13 16:53:42,239 INFO Avaliando Lasso...
+2026-02-13 16:53:42,254 INFO 
+    === Relatório de Avaliação: Lasso ===
+    R2 Score: 0.5736 (Quanto maior, melhor)
+    RMSE (Log): 0.4306
+    
+    Métricas na Escala Real (R$):
+    - MAE (Erro Médio Absoluto): R$ 67878.92
+    - RMSE (Erro Quadrático Médio): R$ 111875.61
+    - MAPE (Erro Percentual Médio): 37.18%
+    
+    Interpretação:
+    O modelo erra, em média, 37.18% do valor do imóvel.
+    Para um imóvel de R$ 300.000, o erro médio é de +/- R$ 67878.92.
+    =============================================
+    
+2026-02-13 16:53:42,255 INFO Avaliando MLP...
+2026-02-13 16:53:44,506 INFO 
+    === Relatório de Avaliação: MLP ===
+    R2 Score: -5.8630 (Quanto maior, melhor)
+    RMSE (Log): 1.7273
+    
+    Métricas na Escala Real (R$):
+    - MAE (Erro Médio Absoluto): R$ 699409.86
+    - RMSE (Erro Quadrático Médio): R$ 10583856.34
+    - MAPE (Erro Percentual Médio): 225.86%
+    
+    Interpretação:
+    O modelo erra, em média, 225.86% do valor do imóvel.
+    Para um imóvel de R$ 300.000, o erro médio é de +/- R$ 699409.86.
+    =============================================
+    
+2026-02-13 16:53:44,513 INFO Melhor modelo geral: GradientBoosting com R2: 0.6638
+2026-02-13 16:53:44,523 INFO Modelo salvo em /home/luiztiagow1987/Área de trabalho/ModeloPonta/modelos/melhor_modelo.pkl
+2026-02-13 16:53:45,974 INFO Pipeline finalizado com sucesso!
